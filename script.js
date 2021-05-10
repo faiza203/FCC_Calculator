@@ -20,21 +20,21 @@ function changeOutPutScreen(e) {
 
 function changeFormulaScreen(e) {
   formulaScreen += e.value;
-  outPutScreen = "";
   formulaScreenEl.value = formulaScreen;
-  outPutScreenEl.value = "";
+  emptyOutPut();
 }
 
 function clearOutPut() {
-  formulaScreen = "";
-  outPutScreen = "0";
-  formulaScreenEl.value = formulaScreen;
-  outPutScreenEl.value = "0";
+  emptyOutPut();
+  emptyFormula();
 }
 
 function getResult() {
   result = eval(formulaScreen);
-  formulaScreenEl.value = `${formulaScreen} = ${result}`;
+  typeof result === "number"
+    ? (formulaScreenEl.value = `${formulaScreen} = ${result}`)
+    : alert("Please check your input");
+  emptyOutPut();
 }
 
 function checkResult() {
@@ -45,7 +45,21 @@ function checkResult() {
         formulaScreen = formulaScreen.slice(0, -1);
       }
     } else {
-      getResult();
+      try {
+        getResult();
+      } catch (err) {
+        emptyOutPut();
+        alert("Check your statement");
+      }
     }
   }
+}
+
+function emptyOutPut() {
+  outPutScreen = "";
+  outPutScreenEl.value = "0";
+}
+function emptyFormula() {
+  formulaScreen = "";
+  formulaScreenEl.value = "";
 }
