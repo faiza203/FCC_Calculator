@@ -25,14 +25,26 @@ body {
   border: 2px solid #47476b;
   padding: 10px 5px 5px 5px;
   background-color: black;
-  text-align: right;
   width: 320px;
 }
-
+.cal input {
+  background-color: black;
+  border: black;
+  width: 100%;
+  text-align: right;
+}
+.cal input:focus-visible {
+  outline: black;
+}
 .cal .buttons {
   display: flex;
   flex-wrap: wrap;
   height: 325px;
+}
+
+.cal button:hover {
+  outline: 0.05em solid grey;
+  z-index: 3;
 }
 
 .cal button {
@@ -43,6 +55,7 @@ body {
   border-radius: 0;
   color: #fff;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .sym {
@@ -69,15 +82,17 @@ body {
 }
 
 .formulaScreen {
-  min-height: 20px;
   color: orange;
   font-family: "Digital";
-  font-size: 20px;
+  font-size: 18px;
+  height: 20px;
+  line-height: 20px;
 }
 
 .outputScreen {
-  font-size: 30px;
-  min-height: 30px;
+  font-size: 28px;
+  height: 30px;
+  line-height: 30px;
   color: #fff;
   font-family: "Digital";
   font-family: 100;
@@ -93,7 +108,7 @@ body {
   display: block;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .cal {
     width: 90vw;
   }

@@ -8,26 +8,26 @@
     <title>FCC_CALCULATOR</title>
   </head>
   <body>
-    <div class="cal" id="cal">
-      <p class="formulaScreen">453275</p>
-      <p class="outputScreen">453275</p>
+    <div class="cal" id="cal" name="cal">
+      <input class="formulaScreen" readonly></input>
+      <input class="outputScreen" name="outputScreen" readonly>453275</input>
       <div class="buttons">
         <button type="reset" value="reset" class="clear">AC</button>
-        <button type="button" value="/" class="sym">/</button>
-        <button type="button" value="*" class="sym">*</button>
-        <button type="button" value="7" class="int">7</button>
-        <button type="button" value="8" class="int">8</button>
-        <button type="button" value="9" class="int">9</button>
-        <button type="button" value="-" class="sym">-</button>
-        <button type="button" value="4" class="int">4</button>
-        <button type="button" value="5" class="int">5</button>
-        <button type="button" value="6" class="int">6</button>
-        <button type="button" value="+" class="sym">+</button>
-        <button type="button" value="1" class="int">1</button>
-        <button type="button" value="2" class="int">2</button>
-        <button type="button" value="3" class="int">3</button>
-        <button type="button" value="0" class="int zero">0</button>
-        <button type="button" value="." class="int">.</button>
+        <button type="button" value="/" class="sym" onclick="changeFormulaScreen(this)">/</button>
+        <button type="button" value="*" class="sym" onclick="changeFormulaScreen(this)">*</button>
+        <button type="button" value="7" class="int" onclick="changeOutPutScreen(this)">7</button>
+        <button type="button" value="8" class="int" onclick="changeOutPutScreen(this)">8</button>
+        <button type="button" value="9" class="int" onclick="changeOutPutScreen(this)">9</button>
+        <button type="button" value="-" class="sym" onclick="changeFormulaScreen(this)">-</button>
+        <button type="button" value="4" class="int" onclick="changeOutPutScreen(this)">4</button>
+        <button type="button" value="5" class="int" onclick="changeOutPutScreen(this)">5</button>
+        <button type="button" value="6" class="int" onclick="changeOutPutScreen(this)">6</button>
+        <button type="button" value="+" class="sym" onclick="changeFormulaScreen(this)">+</button>
+        <button type="button" value="1" class="int" onclick="changeOutPutScreen(this)">1</button>
+        <button type="button" value="2" class="int" onclick="changeOutPutScreen(this)">2</button>
+        <button type="button" value="3" class="int" onclick="changeOutPutScreen(this)">3</button>
+        <button type="button" value="0" class="int zero" onclick="changeOutPutScreen(this)">0</button>
+        <button type="button" value="." class="int" onclick="changeOutPutScreen(this)">.</button>
         <button type="button" value="equal" class="equal">=</button>
       </div>
     </div>
@@ -36,4 +36,5 @@
       <a href="https://faiza235.herokuapp.com">Faiza Fiaz</a>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
