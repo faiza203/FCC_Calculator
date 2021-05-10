@@ -92,3 +92,24 @@ body {
   color: black;
   display: block;
 }
+
+@media (max-width: 400px) {
+  .cal {
+    width: 90vw;
+  }
+  .cal .buttons {
+    height: 250px;
+  }
+  .cal button {
+    width: calc(90vw / 4);
+    height: 50px;
+  }
+  .clear,
+  .zero {
+    width: calc(90vw / 2) !important;
+  }
+  .equal {
+    height: 100px !important;
+    top: -50px;
+  }
+}
