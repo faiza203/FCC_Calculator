@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@font-face {
+  font-family: "Digital";
+  src: url(./Digital7-1e1Z.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +17,7 @@ body {
   flex-direction: column;
   text-align: center;
   font-family: sans-serif;
+  min-height: 100vh;
 }
 
 .cal {
@@ -20,19 +25,49 @@ body {
   padding: 5px;
   background-color: black;
   text-align: right;
+  width: 320px;
+}
+
+.cal .buttons {
+  display: table;
+}
+
+.cal button {
+  font-family: "Share Tech Mono", monospace;
+  height: 65px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+.sym{
+    background-color: rgb(102, 102, 102);
+}
+
+.clear {
+  width: 160px !important;
+  background-color: rgb(172, 57, 57);
 }
 
 .formulaScreen {
   min-height: 20px;
   color: orange;
+  font-family: "Digital";
+  font-size: 20px;
 }
 
 .outputScreen {
-  font-size: 20px;
+  font-size: 30px;
+  min-height: 30px;
   color: #fff;
+  font-family: "Digital";
+  font-family: 100;
 }
 .footer {
   font-family: "Girassol", cursive;
+  margin-top: 2em;
 }
 
 .footer a {
