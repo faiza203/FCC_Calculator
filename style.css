@@ -18,18 +18,21 @@ body {
   text-align: center;
   font-family: sans-serif;
   min-height: 100vh;
+  background-color: #c2c2d6;
 }
 
 .cal {
   border: 2px solid #47476b;
-  padding: 5px;
+  padding: 10px 5px 5px 5px;
   background-color: black;
   text-align: right;
   width: 320px;
 }
 
 .cal .buttons {
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
+  height: 325px;
 }
 
 .cal button {
@@ -42,8 +45,22 @@ body {
   font-size: 20px;
 }
 
-.sym{
-    background-color: rgb(102, 102, 102);
+.sym {
+  background-color: rgb(102, 102, 102);
+}
+
+.int {
+  background-color: #4d4d4d;
+}
+
+.zero {
+  width: 160px !important;
+}
+.equal {
+  position: relative;
+  background-color: rgb(0, 68, 102);
+  height: 130px !important;
+  top: -65px;
 }
 
 .clear {
