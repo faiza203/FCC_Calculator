@@ -12,7 +12,7 @@
       <input class="formulaScreen" readonly></input>
       <input class="outputScreen" name="outputScreen" readonly>453275</input>
       <div class="buttons">
-        <button type="reset" value="reset" class="clear">AC</button>
+        <button type="reset" value="reset" class="clear"onclick="clearOutPut()">AC</button>
         <button type="button" value="/" class="sym" onclick="changeFormulaScreen(this)">/</button>
         <button type="button" value="*" class="sym" onclick="changeFormulaScreen(this)">*</button>
         <button type="button" value="7" class="int" onclick="changeOutPutScreen(this)">7</button>
@@ -28,7 +28,7 @@
         <button type="button" value="3" class="int" onclick="changeOutPutScreen(this)">3</button>
         <button type="button" value="0" class="int zero" onclick="changeOutPutScreen(this)">0</button>
         <button type="button" value="." class="int" onclick="changeOutPutScreen(this)">.</button>
-        <button type="button" value="equal" class="equal">=</button>
+        <button type="button" value="equal" class="equal" onclick="checkResult()" >=</button>
       </div>
     </div>
     <div class="footer">
