@@ -51,11 +51,12 @@ body {
   font-family: "Share Tech Mono", monospace;
   height: 65px;
   width: 80px;
-  border: 1px solid black;
+  outline: 1px solid black;
   border-radius: 0;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+  border: 0;
 }
 
 .sym {
